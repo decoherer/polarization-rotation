@@ -21,7 +21,7 @@ A = np.array([[ +1 ], # anti-diagonal -45° polarization
 L = np.array([[ +1  ], # left circular polarization
               [ +1j ]])/sqrt(2)
 R = np.array([[ +1  ], # right circular polarization
-              [ +1j ]])/sqrt(2)
+              [ -1j ]])/sqrt(2)
 def ellipticalpolarization(θ,β): # θ = rotation angle, β = cirularity
     return np.array([[ cos(θ) ],
                      [ sin(θ)*exp(1j*β) ]])
